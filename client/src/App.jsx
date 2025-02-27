@@ -31,7 +31,7 @@ function App() {
     } catch (err) {
       setError(err.response?.data?.message || "Failed to fetch weather data");
       setLoading(false);
-      setWeatherData(null); // Reset weather data on error
+      setWeatherData(null);
     }
   };
 
