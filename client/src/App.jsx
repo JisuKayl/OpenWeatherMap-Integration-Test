@@ -24,7 +24,7 @@ function App() {
 
     try {
       const response = await axios.get(
-        `/api/weather?city=${encodeURIComponent(city)}`
+        `http://localhost:5000/api/weather?city=${encodeURIComponent(city)}`
       );
       setWeatherData(response.data);
       setLoading(false);
